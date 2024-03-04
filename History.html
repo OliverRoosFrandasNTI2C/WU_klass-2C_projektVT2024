@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSGO Skin Marketplace - Inflation</title>
+</head>
+<body>
+
+    <header>
+        <h1>CSGO Skin Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Hem</a></li>
+                <li><a href="index.html">Marketplace</a></li>
+                <li><a href="history.html">Inflation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Inflation History</h2>
+        
+        <svg id="priceChart" width="800" height="300">
+            <!-- Axis -->
+            <line x1="50" y1="250" x2="750" y2="250" stroke="black" stroke-width="2" />
+            <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="2" />
+    
+            <!-- Y-axis labels -->
+            <text x="38" y="60" text-anchor="end">Price</text>
+            <text x="30" y="100" text-anchor="end">20€</text>
+            <text x="30" y="175" text-anchor="end">10€</text>
+            <text x="30" y="250" text-anchor="end">0€</text>
+    
+            <!-- X-axis labels -->
+            <text x="100" y="280" text-anchor="middle">Jan</text>
+            <text x="250" y="280" text-anchor="middle">Feb</text>
+            <text x="400" y="280" text-anchor="middle">Mar</text>
+            <text x="550" y="280" text-anchor="middle">Apr</text>
+            <text x="700" y="280" text-anchor="middle">May</text>
+            <text x="750" y="280" text-anchor="middle">Month</text>
+    
+            <!-- Connect the dots with lines -->
+            <polyline points="100,200 250,190 400,210 550,150 700,180" fill="none" stroke="#ffcc00" stroke-width="2" />
+    
+            <!-- Price points -->
+            <circle cx="100" cy="200" r="5" fill="#ffcc00" />
+            <circle cx="250" cy="190" r="5" fill="#ffcc00" />
+            <circle cx="400" cy="210" r="5" fill="#ffcc00" />
+            <circle cx="550" cy="150" r="5" fill="#ffcc00" />
+            <circle cx="700" cy="180" r="5" fill="#ffcc00" />
+        </svg>
+    </section>
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2024 CSGO Skin Marketplace</p>
+    </footer>
+
+</body>
+</html>
